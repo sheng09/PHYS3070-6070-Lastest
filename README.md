@@ -4,10 +4,10 @@ PHYS3070/PHYS6070 Labs
 Earthquakes are catastrophic however prominent phenomena of physics of the Earth. How to investigate
 an earthquake, in a scientific viewpoint? Well, in this lab, you will learn about that, especially for being practical!
 
-Specifically, to describe an earthquake, we need to answer two kinds of questions: 1) where and when is it? and, 2) how is it (the mechanics, the dynamics)?
-Answering the two questions correspond to the two labs, respectively. So, you will learn in the 1st lab how to locate an earthquakes, and in the 2nd lab how to invert focal mechanism of an earthquake.
+Specifically, to investigate an earthquake, we need to answer two types of questions: 1) where and when is it? and, 2) how is it (the mechanics, the dynamics)?
+Answering the two questions correspond to the two labs, respectively. In lab1, you will learn how to locate an earthquake, and in lab2 how to invert the focal mechanism for an earthquake.
 
-Both the labs relies observations of seismic waves radiated from an earthquake (called seismograms), as the information we look forward to is behind the seismograms. To process and analyze seismograms, you will need to manipulate modern scientific computing tools. For that, you will start with "basics of linux and SAC" to get your armed, and then lab1 and lab2 for answering the questions above.
+Both the lab1 and lab2 rely on observations of seismic waves radiated from an earthquake (called seismograms), as the information we look forward to is behind the seismograms. To process and analyze seismograms, you will need to manipulate modern scientific computing tools. For that, you will start with "Basics of Linux and SAC" to get your armed, and then lab1 and lab2 to "enter the field".
 
 
 - When: Every Wednesday 13:30-15:30 (TBD)
