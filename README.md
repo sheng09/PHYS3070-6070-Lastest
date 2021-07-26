@@ -15,7 +15,7 @@ Both the labs relies observations of seismic waves radiated from an earthquake (
 - Contact: sheng.wang(at)anu.edu.au
 
 # Content
-- Week 1 : Basics of Linux and SAC [here](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Basics/README.md)
+- Week 1 : Basics of Linux and SAC [here](https://github.com/sheng09/PHYS3070-6070-Lastest/blob/main/materials/Basics/README.md#basics-of-linux-and-sac)
 - Week 2,3 : [Lab1](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Lab1/README.md)
 - Week 4,5 : [Lab2](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Lab2/README.md)
 - Week 6 : Q&A
