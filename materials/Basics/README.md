@@ -12,13 +12,15 @@ computer no matter which operating system you are using, Windows or MacOS.
 On Windows, you can download, install, and run [putty](https://www.putty.org/) to log in to the `compute2`.
 You will need to install [xming](https://cc.jlab.org/windows/X11onWindows) as well for forwarding
 graphic user interface. Those two softwares are pre-installed for you on RSES computers. If
-you like, you can install and run them on your laptop. To use them, the manual is [here]().
+you like, you can install and run them on your laptop. To use them, the manual is [here](https://github.com/sheng09/PHYS3070-6070-Lastest/blob/main/materials/Basics/How-to-access-RSES-server.pdf).
 
 On MacOS, you can open the application `Terminal` and run commands below to log in:
 ```shell
 ssh  -XY  your_user_name@compute2.rses.anu.edu.au
 # after typing the password, you will be on the server compute2
 ```
+
+**NOTE**. If you are off campus, you will need to install and run ANU [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access). You may need to ask the GlobalProtect Service Desk to allow you the permission to access RSES servers. Contacts of the Service Desk are on the [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access) website.
 
 # 2. Basics of Linux
 Here we just list a few frequently-used Linux commands:
