@@ -6,8 +6,8 @@ PHYS3070/PHYS6070 Labs
 - Contact: sheng.wang(at)anu.edu.au
 
 # Content
-- Week 1 : Basics of Linux/Unix and SAC [here](https://github.com/sheng09/PHYS3070-6070-Lastest/materials/Basics/README.md)
-- Week 2,3 : [Lab1](https://github.com/sheng09/PHYS3070-6070-Lastest/materials/Lab1/README.md)
-- Week 4,5 : [Lab2](https://github.com/sheng09/PHYS3070-6070-Lastest/materials/Lab2/README.md)
+- Week 1 : Basics of Linux/Unix and SAC [here](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Basics/README.md)
+- Week 2,3 : [Lab1](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Lab1/README.md)
+- Week 4,5 : [Lab2](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Lab2/README.md)
 - Week 6 : Q&A
 
