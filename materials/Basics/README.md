@@ -72,8 +72,8 @@ So it is better to run it and put it in the background with the command:
 gedit filename &
 ```
 
-in which the character `&` at the end means to put the running in the background. You can use it for any other commands. You
-can list commands that are running in the background with the command:
+in which the character `&` at the end means to put the running program in the background. You can use it for any other programs. You
+can list all your programs that are running in the background:
 
 ```shell
 jobs
