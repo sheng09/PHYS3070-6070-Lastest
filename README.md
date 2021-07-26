@@ -1,12 +1,21 @@
 PHYS3070/PHYS6070 Labs
 ====
 
+Earthquakes are catastrophic however one of the prominent phenomena of physics of the Earth. So, how to
+describe an earthquake, in a scientific viewpoint? Well, you will learn that, especially for being pratical, in this Lab!
+
+Specifically, to describe an earthquake, we need to answer two kinds of questions: 1) where and when is it? and, 2) how is it (the mechanics, the dynamics)?
+Answering the two questions correspond to the two labs, respectively. So, you will learn 1) how to locate an earthquakes and 2) how to invert focal mechanism of an earthquake. Both the labs relies observations of seismic waves radiated from an earthquake (called seismograms), as the information we look forward to is behind the seismograms.
+
+So, you will learn how to process and analyze seismograms. That consists of manipulations of modern scientific computing tools. Therefore, the labs start with "basics of linux and SAC", and then lab1 and lab2 for answering the questions above.
+
+
 - When: Every Wednesday 13:30-15:30
 - Where: RSES Computing LAB (J8 Ground Floor)[map](https://www.google.com/maps/place/Jaeger+8/@-35.2837193,149.115299,18.75z/data=!4m12!1m6!3m5!1s0x345e61a9c2de99:0x1c74dd792f36cd66!2sANU+Research+School+of+Earth+Sciences!8m2!3d-35.2838867!4d149.1150271!3m4!1s0x6b164d8c98037cb3:0x137b95ded7380043!8m2!3d-35.2840535!4d149.1153078)
 - Contact: sheng.wang(at)anu.edu.au
 
 # Content
-- Week 1 : Basics of Linux/Unix and SAC [here](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Basics/README.md)
+- Week 1 : Basics of Linux and SAC [here](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Basics/README.md)
 - Week 2,3 : [Lab1](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Lab1/README.md)
 - Week 4,5 : [Lab2](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Lab2/README.md)
 - Week 6 : Q&A
