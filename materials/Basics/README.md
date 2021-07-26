@@ -95,4 +95,4 @@ SAC (Seismic Analysis Code) is a program used to analyze and display seismic dat
 is stored in sac format. It has its own set of premade functions that will read, write, process, and display data. There will be further
 explanation of these functions later in the semester.
 
-You can simply run `sac` to start the SAC program in the terminal. Full manual for using SAC is [here](http://www.iris.edu/manuals/sac/manual.html).
+You can simply run `sac` to start the SAC program in the terminal. Full manual for using SAC is [here](http://ds.iris.edu/files/sac-manual/).
