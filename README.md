@@ -1,8 +1,8 @@
 PHYS3070/PHYS6070 Labs
 ====
 
-Earthquakes are catastrophic however prominent phenomena of physics of the Earth. So, how to
-describe an earthquake, in a scientific viewpoint? Well, you will learn that, especially for being pratical, in this Lab!
+Earthquakes are catastrophic however prominent phenomena of physics of the Earth. How to investigate
+an earthquake, in a scientific viewpoint? Well, you will learn that, especially for being pratical, in this Lab!
 
 Specifically, to describe an earthquake, we need to answer two kinds of questions: 1) where and when is it? and, 2) how is it (the mechanics, the dynamics)?
 Answering the two questions correspond to the two labs, respectively. So, you will learn in the 1st lab how to locate an earthquakes, and in the 2nd lab how to invert focal mechanism of an earthquake.
