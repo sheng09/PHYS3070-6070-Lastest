@@ -16,7 +16,7 @@ Both the lab1 and lab2 rely on observations of seismic waves radiated from an ea
 
 # Content
 - Week 1 : Basics of Linux and SAC [here](https://github.com/sheng09/PHYS3070-6070-Lastest/blob/main/materials/Basics/README.md#basics-of-linux-and-sac)
-- Week 2,3 : [Lab1](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Lab1/README.md)
-- Week 4,5 : [Lab2](https://github.com/sheng09/PHYS3070-6070-Lastest/tree/main/materials/Lab2/README.md)
+- Week 2,3 : Lab1(coming soon)
+- Week 4,5 : Lab2(coming soon)
 - Week 6 : Q&A
 
