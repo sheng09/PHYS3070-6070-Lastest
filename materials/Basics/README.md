@@ -82,8 +82,9 @@ jobs
 ## Quiz
 The quiz here is just for letting you test yourself.
 - Can you make a new directory, and inside the directory create several new files?
-- Can you write something to the new files, and print the content of the file?
+- Can you write something to the new files, and print the content of the files?
 - Can copy other files and folders somewhere else into this new fold?
+- Can you re-name, remove those files and folders?
 - Make sure you do correct manipulations of files/folders in correct folder. If not sure, check where you are with `pwd`.
 
 ## More materials
