@@ -3,7 +3,7 @@ Lab1 - Locating earthquakes
 
 In this exercise, we examine sets of digital seismograms recorded at different stations around the globe with the object of determining the epicenters and origin times of the earthquakes. (An epicenter is the projection point on the earth’s surface of the real location; a hypocenter is the real location of the earthquake source. The origin time of the earthquake is usually expressed as UTC.) Please read the instructions in full before beginning and note the helpful commands given in the Unix/Linux command and SAC intro sheets.
 
-# Part I (20 points)
+# Part 1 (20 points)
 
 **Working directory: `~/Lab1`**.
 
@@ -11,9 +11,11 @@ Use Seismic Analysis Tool (`SAC`) to read in 3 components of seismograms for eac
 
 For each station, **estimate the time at which the P and S waves arrive**. You will use `ppk` to pick and `wh` to store the time. The P wave will be the first prominent arrival on the vertical component; the S wave should be the first prominent arrival showing on both horizontals that typically has smaller (or negligible) amplitude on the vertical component.  Pick the P wave on the vertical (BHZ) component and the S wave on one of the horizontal components (BHN or BHE).  Calculate the difference in arrival times (“S-P time”).  **Complete columns 2-4 of the accompanying table for the stations that are given to you**.  Be aware that other phases may arrive before the S (such as PP), which may lead to identification issues.
 
-Run the [Jupyter-notebook]() to **invert the epicentral distance and P wave traveltime** for each station.  The origin time can then be worked out by subtracting the P wave traveltime from the absolute P arrival time estimated above. For example, the inverted P wave traveltime is 1800 seconds (30 minutes) and the absolute P arrival time estimated is 2020-01-01T00:30:30, then the origin time is 2020-01-01T00:00:30. **Complete the last two columns of the table**. All origin times should be similar (within ~10-15 sec); if not, re-examine the seismograms and confirm the identification of P & S for the anomalous station(s). Take the average of the station estimates as the origin time of the earthquake.
+Run the `Jupyter-notebook` to **invert the epicentral distance and P wave traveltime** for each station.  The origin time can then be worked out by subtracting the P wave traveltime from the absolute P arrival time estimated above. For example, the inverted P wave traveltime is 1800 seconds (30 minutes) and the absolute P arrival time estimated is 2020-01-01T00:30:30, then the origin time is 2020-01-01T00:00:30. **Complete the last two columns of the table**. All origin times should be similar (within ~10-15 sec); if not, re-examine the seismograms and confirm the identification of P & S for the anomalous station(s). Take the average of the station estimates as the origin time of the earthquake.
 
-Run the [Jupyter-notebook]() **Construct a map** (directions follow) with a circle of constant radius (equal to the source-receiver distance) drawn around each station. Plotting of the constant radius circles on a Mercator projection map is done by a program called `equake` (the location is `~/Lab1/construct_map`). To use `equake`, enter the epicentral distance data into a file called `equakes.dat`. After running `equake`, examine the map it produces on the screen. All the circles should intersect at approximately one point.  If any of the circles are inconsistent with the solution, go back and check your first steps for the appropriate station.  If the solution looks good, run the program `equakez` in the same manner as `equake`, which gives a closer view of the region around the epicentre and **estimate as accurately as possible the coordinates of the earthquake**. One way to do this is to find the point on the map that minimizes the sum of the distances (L1 norm) or distances squared (L2 norm) between the selected point and each of the circles. Write the estimated longitude and latitude on the lines of the attached table.
+**Construct a map** (directions follow) with a circle of constant radius (equal to the source-receiver distance) drawn around each station. All the circles should intersect at approximately one point. If any of the circles are inconsistent with the solution, go back and check your first steps for the appropriate station.
+
+If the solution looks good, plot a closer view of the region around the epicentre and estimate as accurately as possible the coordinates of the earthquake. One way to do this is to find the point on the map that minimizes the sum of the distances (L1 norm) or distances squared (L2 norm) between the selected point and each of the circles. Write the estimated longitude and latitude on the lines of the attached table.
 
 **Please submit the following**:
 - [ ] the table you completed during the exercise,
@@ -38,7 +40,7 @@ Run the [Jupyter-notebook]() **Construct a map** (directions follow) with a circ
 
 In Part I, we use `spdiff` to compute epicentral distance and `equake`/`equakez` to plot. Those programs are in *FORTRAN* or *bash* and requires another softwave *GMT*. Instead, here in another implementation in *Python* zipped [here](https://github.com/sheng09/PHYS3070-2020/raw/master/Week2/Lab1-Jupyter.zip). To make it easy, it is in Jupyter notebook, and you can play it. It may be benefical for your Part III programming.
 
-# Part II (30 points)
+# Part 2 (30 points)
 ### **Purpose**
 
 The student should learn about basic principles involved in locating a local earthquake.
@@ -89,7 +91,7 @@ __***D1. Consider the assumptions you made in locating this earthquake. What hav
 
 __***D2. The PRI seismogram is an interesting example where the travel times of the phases are quite difficult to read with confidence. From the solution you obtained for the epicentre, what are the predicted arrival times of P and S at this station? How do these predictions compare with what you see on the seismogram? What information on the seismogram did you actually use in locating this event?***__
 
-# Part III (50 points)
+# Part 3 (50 points)
 
 **Write** a program in Mathematica or Fortran (or C) to estimate the earthquake epicenter location based on the observed P and S travel times (emulating Part II).
 
