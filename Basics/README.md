@@ -49,12 +49,12 @@ Or you can just  download and install [OpenSSH](https://www.mls-software.com/fil
 
 | Name               | 4 digits | User name | Password for ssh |  Password for Jupyter-lab|
 |:-------------------|:--------:|:---------:|:----------------:|:---:|
-|Patrik Rilko        | 9010     | student01 |                  |     |
 |Cole Johnson        | 9020     | student02 |                  |     |
 |Maximilian Williams | 9030     | student03 |                  |     |
 |Joshua Taubman      | 9040     | student04 |                  |     |
 |Tianshi Zhou        | 9050     | student05 |                  |     |
 |Jason Aramideh      | 9060     | student06 |                  |     |
+|Patrik Rilko        | 9070     | student07 |                  |     |
 
 
 **NOTE**. If you are off campus, you will need to install and run ANU [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access). You may need to ask the GlobalProtect Service Desk to allow you the permission to access RSES servers. Contacts of the Service Desk are on the [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access) website.

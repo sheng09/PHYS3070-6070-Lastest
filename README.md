@@ -15,8 +15,8 @@ Both the lab1 and lab2 rely on observations of seismic waves radiated from an ea
 - **Contact**: sheng.wang(at)anu.edu.au
 
 # Content
-- Week 1 : Basics of Linux and SAC [here](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/materials/Basics/README.md#basics-of-linux-and-sac)
-- Week 2,3 : [Lab1](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/materials/Lab1/README.md#lab1---location-of-a-local-earthquake)
-- Week 4,5 : [Lab2]()
+- Week 1 : Basics of Linux and SAC [here](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Basics/README.md#basics-of-linux-and-sac)
+- Week 2,3 : [Lab1](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Lab1/README.md#lab1---locating-earthquakes)
+- Week 4,5 : Lab2
 - Week 6 : Q&A
 
