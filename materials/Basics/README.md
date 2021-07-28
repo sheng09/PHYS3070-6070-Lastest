@@ -19,8 +19,9 @@ computer no matter which operating system you are using, Windows or MacOS. You n
     # NOTE: 1. Please replace the 9000 with your four digits listed in the table below
     # NOTE: 2. Please replace the account name student01 with yours listed in the table below
     ssh -N -f -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
+    # You may need to type the password here
     ```
-- Open a web browser on your local computer, and go to `http://localhost:9000`. The same, replace the 9000 with your four digits. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
+- Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
 
 ## Windows 10 or Higher versions
 - Some versions of Windows 10 have built-in `OpenSSH` tools. You may need to check Microsoft [help](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse).
@@ -31,8 +32,9 @@ Or you can just  download and install [OpenSSH](https://www.mls-software.com/fil
     # NOTE: 1. Please replace the number 9000 with your four digits listed in the table below
     # NOTE: 2. Please replace the account name student01 with yours listed in the table below
     ssh -N -f -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
+    # You may need to type the password here
     ```
-- Open a web browser on your local computer, and go to `http://localhost:9000`. The same, replace the 9000 with your four digits. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
+- Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
 
 ## MacOS
 - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
@@ -41,17 +43,18 @@ Or you can just  download and install [OpenSSH](https://www.mls-software.com/fil
     # NOTE: 1. Please replace the number 9000 with your four digits listed in the table below
     # NOTE: 2. Please replace the account name student01 with yours listed in the table below
     ssh -N -f -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
+    # You may need to type the password here
    ```
-- Open a web browser on your local computer, and go to `http://localhost:9000`. The same, replace the 9000 with your four digits. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
+- Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
 
-| Name               | 4 digits | User name | Password |
-|:-------------------|:--------:|:---------:|:--------:|
-|Patrik Rilko        | 9010     | student01 |          |
-|Cole Johnson        | 9020     | student02 |          |
-|Maximilian Williams | 9030     | student03 |          |
-|Joshua Taubman      | 9040     | student04 |          |
-|Tianshi Zhou        | 9050     | student05 |          |
-|Jason Aramideh      | 9060     | student06 |          |
+| Name               | 4 digits | User name | Password for ssh |  Password for Jupyter-lab|
+|:-------------------|:--------:|:---------:|:----------------:|:---:|
+|Patrik Rilko        | 9010     | student01 |                  |     |
+|Cole Johnson        | 9020     | student02 |                  |     |
+|Maximilian Williams | 9030     | student03 |                  |     |
+|Joshua Taubman      | 9040     | student04 |                  |     |
+|Tianshi Zhou        | 9050     | student05 |                  |     |
+|Jason Aramideh      | 9060     | student06 |                  |     |
 
 
 **NOTE**. If you are off campus, you will need to install and run ANU [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access). You may need to ask the GlobalProtect Service Desk to allow you the permission to access RSES servers. Contacts of the Service Desk are on the [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access) website.
@@ -106,6 +109,7 @@ The quiz here is just for letting you test yourself.
 
 ## More materials
 The more you know about Linux, the easier your life will be with scientific computing. There are so many learning materials for free on internet. If you are happy, please read, practice, and test yourself.
+
 
 # 3. Basics of SAC
 SAC (Seismic Analysis Code) is a program used to analyze and display seismic data, usually earthquake waveforms, that
