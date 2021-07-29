@@ -18,7 +18,7 @@ computer no matter which operating system you are using, Windows or MacOS. You n
     ```bash
     # NOTE: 1. Please replace the 9000 with your four digits listed in the table below
     # NOTE: 2. Please replace the account name student01 with yours listed in the table below
-    ssh -N -f -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
+    ssh -N -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
     # You may need to type the password here
     ```
 - Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
@@ -31,7 +31,7 @@ Or you can just  download and install [OpenSSH](https://www.mls-software.com/fil
     ```bash
     # NOTE: 1. Please replace the number 9000 with your four digits listed in the table below
     # NOTE: 2. Please replace the account name student01 with yours listed in the table below
-    ssh -N -f -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
+    ssh -N -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
     # You may need to type the password here
     ```
 - Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
@@ -42,7 +42,7 @@ Or you can just  download and install [OpenSSH](https://www.mls-software.com/fil
     ```bash
     # NOTE: 1. Please replace the number 9000 with your four digits listed in the table below
     # NOTE: 2. Please replace the account name student01 with yours listed in the table below
-    ssh -N -f -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
+    ssh -N -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
     # You may need to type the password here
    ```
 - Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
