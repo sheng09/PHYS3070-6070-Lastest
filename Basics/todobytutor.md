@@ -13,6 +13,7 @@ pip3 install --user obspy
 pip3 install --user pandas
 
 #3. start jupyter-lab
+jupyter notebook $password
 jupyter-lab --port $XXXX$ --no-browser & # replace XXXX to four digits
 ```
 
