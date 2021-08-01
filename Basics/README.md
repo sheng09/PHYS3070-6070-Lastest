@@ -55,7 +55,7 @@ Or you can just  download and install [OpenSSH](https://www.mls-software.com/fil
 |Tianshi Zhou        | 9050     | student05 |                  |     |
 |Jason Aramideh      | 9060     | student06 |                  |     |
 |Patrik Rilko        | 9070     | student07 |                  |     |
-
+|Ruipeng Ma          | 9080     | student08 |                  |     |
 
 **NOTE**. If you are off campus, you will need to install and run ANU [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access). You may need to ask the GlobalProtect Service Desk to allow you the permission to access RSES servers. Contacts of the Service Desk are on the [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access) website.
 
