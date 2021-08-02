@@ -26,8 +26,6 @@ You need to download and install a few things. Choose your system and follow ste
         ```
         Follow the prompts and type your password.
 
-    
-    If you cannot install or run OpenSSH (e.g., you are not the administrator). You can use `putty` following the steps here.
 - MacOS
     - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
     - Run the application `Terminal`, and run commands below.
