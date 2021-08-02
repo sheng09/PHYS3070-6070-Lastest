@@ -6,46 +6,57 @@ Basics of Linux and SAC
 Linux is always the best choice for scientific computing. Not-surprisingly,
 the PHYS3070/PHYS6070 labs are in Linux environment. The linux environment can
 be on your computer or on a remote server. In this lab, we choose the 2nd option
-to make it simple. We have set up a remote server (`compute2`) at RSES for you. It is based on
-Jupyter-lab, handy to use. You can log in from your
-computer no matter which operating system you are using, Windows or MacOS. You need to download and install a few things. Choose your system and follow steps below.
+to make it simple. We have set up a remote server (`compute2`) at RSES for you.
+
+You will log in to the `compute2` via two methods: 1) terminal method and 2)
+Jupyter-lab method. Both are necessary for this lab. You will use the former
+to run `SAC` GUI. The latter will be more handy for using Python3.
+
+## 1.1 Via terminal
+You need to download and install a few things. Choose your system and follow steps below.
+
+- Windows
+    - Download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
+    - Download, install, and run [xming](https://sourceforge.net/projects/xming/).
+    - Run the `cmd` from Start, and run commands below.
+    (**Note!!!** Please replace the account name `student01` with yours listed in the table below.)
+        ```bash
+        set DISPLAY=127.0.0.1:0
+        ssh -XY student01@compute2.rses.anu.edu.au
+        ```
+- MacOS
+    - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
+    - Run the application `Terminal`, and run commands below.
+    (**Note!!!** Please replace the account name `student01` with yours listed in the table below.)
+        ```bash
+        ssh -XY student01@compute2.rses.anu.edu.au
+        ```
+
+After typing your password provided, you are on the server.
 
 
-## Windows 7
-- Download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
-- Download, install, and run [xming](https://sourceforge.net/projects/xming/).
-- Run the `cmd` from Start, and run commands below:
-    ```bash
-    # NOTE: 1. Please replace the 9000 with your four digits listed in the table below
-    # NOTE: 2. Please replace the account name student01 with yours listed in the table below
-    ssh -N -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
-    # You may need to type the password here
-    ```
-- Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
+## 1.2 Via `Jupyter-lab`
+Jupyter-lab is handy. The same, You need to download and install a few things. Choose your system and follow steps below.
 
-## Windows 10 or Higher versions
-- Some versions of Windows 10 have built-in `OpenSSH` tools. You may need to check Microsoft [help](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse).
-Or you can just  download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe). (btw, complain to Microsoft for problems and bad experiences.)
-- Download, install, and run [xming](https://sourceforge.net/projects/xming/).
-- Run the `cmd` from Start, and run commands below:
-    ```bash
-    # NOTE: 1. Please replace the number 9000 with your four digits listed in the table below
-    # NOTE: 2. Please replace the account name student01 with yours listed in the table below
-    ssh -N -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
-    # You may need to type the password here
-    ```
-- Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
+- Windows
+    - Download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
+    - Run the `cmd` from Start, and run commands below.
+    (**Note!!!** Please replace the 9000 with your four digits listed in the table below. Please replace the account name `student01` with yours listed in the table below.)
+        ```bash
+        ssh -N -L 8000:localhost:9000 student01@compute2.rses.anu.edu.au
+        ```
+    - Open a web browser on your local computer, and go to `http://localhost:8000`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
 
-## MacOS
-- Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
-- Run the application `Terminal`, and run commands below:
-    ```bash
-    # NOTE: 1. Please replace the number 9000 with your four digits listed in the table below
-    # NOTE: 2. Please replace the account name student01 with yours listed in the table below
-    ssh -N -L 8888:localhost:9000 student01@compute2.rses.anu.edu.au
-    # You may need to type the password here
-   ```
-- Open a web browser on your local computer, and go to `http://localhost:8888`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
+
+- MacOS
+    - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
+    - Run the application `Terminal`, and run commands below.
+    (**Note!!!** Please replace the 9000 with your four digits listed in the table below. Please replace the account name `student01` with yours listed in the table below.)
+        ```bash
+        ssh -N -L 8000:localhost:9000 student01@compute2.rses.anu.edu.au
+        ```
+    - Open a web browser on your local computer, and go to `http://localhost:8000`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
+
 
 | Name               | 4 digits | User name | Password for ssh |  Password for Jupyter-lab|
 |:-------------------|:--------:|:---------:|:----------------:|:---:|
@@ -116,4 +127,7 @@ SAC (Seismic Analysis Code) is a program used to analyze and display seismic dat
 is stored in sac format. It has its own set of premade functions that will read, write, process, and display data. There will be further
 explanation of these functions later in the semester.
 
-In the Jupyter-lab, lanuch a `Terminal` and simply run `sac` to start the SAC program. Full manual for using SAC is [here](http://ds.iris.edu/files/sac-manual/).
+Log in to the `compute2` using the  "via terminal" method. Then, simply run `sac` to start the SAC program. Full manual for using SAC is [here](http://ds.iris.edu/files/sac-manual/).
+
+You may notice that there are terminals in Jupyter-lab. Yes, you can run `sac` there, but Jupyter-lab does not support X window. That means it does not allow interactive SAC GUI that is necessary for manipulating seismograms.
+
