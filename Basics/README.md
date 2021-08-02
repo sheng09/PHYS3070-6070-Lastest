@@ -1,11 +1,11 @@
 Basics of Linux and SAC
 ====
 
-# 1. Aha, log in to a Linux environment
+# 1. Aha, log in to Linux environments
 
 Linux is always the best choice for scientific computing. Not-surprisingly,
 the PHYS3070/PHYS6070 labs are in Linux environment. The linux environment can
-be on your computer or on a remote server. In this lab, we choose the 2nd option
+be on your local computer or on a remote server. In this lab, we choose the 2nd option
 to make it simple. We have set up a remote server (`compute2`) at RSES for you.
 
 You will log in to the `compute2` via two methods: 1) terminal method and 2)
@@ -19,19 +19,19 @@ You need to download and install a few things. Choose your system and follow ste
     - Download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
     - Download, install, and run [Xming](https://sourceforge.net/projects/xming/).
     - Run the `cmd` from Start, and run commands below.
-    (**Note!!!** Please replace the account name `student01` with yours listed in the table below.)
+    (**Note!!!** Please replace the user name `student01` with yours listed in the table below.)
         ```bash
         set DISPLAY=127.0.0.1:0
         ssh -XY student01@compute2.rses.anu.edu.au
         ```
         Follow the prompts and type your password.
 
-    If your cannot install or use OpenSSH (e.g., you do not have the administrator permission), then you can use Putty following the steps [here](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Basics/putty_windows.md#1-log-in-to-linux-server-via-putty).
+    **Alternatively**, if your cannot install OpenSSH (e.g., you do not have administrator permission), then you can use Putty following the steps [here](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Basics/putty_windows.md#1-log-in-to-linux-server-via-putty).
 
 - MacOS
     - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
     - Run the application `Terminal`, and run commands below.
-    (**Note!!!** Please replace the account name `student01` with yours listed in the table below.)
+    (**Note!!!** Please replace the user name `student01` with yours listed in the table below.)
         ```bash
         ssh -XY student01@compute2.rses.anu.edu.au
         ```
@@ -43,7 +43,7 @@ Jupyter-lab is handy for using Python3. The same, You need to download and insta
 - Windows
     - If have not, please download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
     - Run a new `cmd` from Start, and run commands below.
-    (**Note!!!** Please replace the 9000 with your four digits listed in the table below. Please replace the account name `student01` with yours listed in the table below.)
+    (**Note!!!** Please replace the 9000 with your four digits listed in the table below. Please replace the user name `student01` with yours listed in the table below.)
         ```bash
         ssh -N -L 8000:localhost:9000 student01@compute2.rses.anu.edu.au
         ```
@@ -54,7 +54,7 @@ Jupyter-lab is handy for using Python3. The same, You need to download and insta
 - MacOS
     - If have not, please download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
     - Open a new window for application `Terminal`, and run commands below.
-    (**Note!!!** Please replace the 9000 with your four digits listed in the table below. Please replace the account name `student01` with yours listed in the table below.)
+    (**Note!!!** Please replace the 9000 with your four digits listed in the table below. Please replace the user name `student01` with yours listed in the table below.)
         ```bash
         ssh -N -L 8000:localhost:9000 student01@compute2.rses.anu.edu.au
         ```
@@ -117,8 +117,8 @@ Well, you can edit a plain text file in many ways. In Jupyter-lab, you can find 
 The quiz here is just for letting you test yourself.
 - Can you make a new directory, and inside the directory create several new files?
 - Can you write something to the new files, and print the content of the files?
-- Can copy other files and folders somewhere else into this new fold?
-- Can you re-name, remove those files and folders?
+- Can copy files and folders somewhere else into this new fold?
+- Can you re-name, remove some files and folders?
 - Make sure you do correct manipulations of files/folders in correct folder. If not sure, check where you are with `pwd`.
 
 ## More materials
@@ -130,7 +130,25 @@ SAC (Seismic Analysis Code) is a program used to analyze and display seismic dat
 is stored in sac format. It has its own set of premade functions that will read, write, process, and display data. There will be further
 explanation of these functions later in the semester.
 
-Log in to the `compute2` using the  "Terminal method". Then, simply run `sac` to start the SAC program. Full manual for using SAC is [here](http://ds.iris.edu/files/sac-manual/).
+Log in to the `compute2` using the  "Terminal method". Then, simply run `sac` to start the SAC program. The sac has its own commands, and the frequently-used include:
 
-You may notice that there are terminals in Jupyter-lab. Yes, you can run `sac` there, but Jupyter-lab does not support X window. That means it does not allow interactive SAC GUI that is necessary for manipulating seismograms.
+- `r filename1 filename2...` : Read sac files into the memory.
+- `qdp off` : Turn off the "quick and dirty plot" option.
+- `p1` : Plot seismograms for the sac files in the memory.
+- `ppk` : Interactive GUI for picking.
+- `lh` : Print the header information that describe the seismograms.
+- `bp c 0.05 0.2 n 2 p 2` : Apply bandpass filter to the seismograms. `c 0.05 0.2` means the frequency band is 0.05-0.2 Hz, `n 2` 2nd-order, `p 2` two-pass or zero-phase filter.
+- `lp c 0.5 n 2 p 2` : Lowpass filter.
+- `hp c 0.1 n 2 p 2` : highpass filter.
 
+  Note: each time when you run a filter, it will modify the seismograms  and hence the original seismograms do not eixst in the memory. Therefore, you need to read the seismograms again if you want to change your filter settings.
+- `w newfilename1 newfilename2...` : Write seismograms into files. The number of output filenames should match the number of seismograms in the memory.
+- `w append _processed` : Another usage to write seismograms into files. It will automatically name the output filenames by appending text to each name in the current read filelist.
+- `w over` : Use current read filelist as write filelist.  Overwrite files on disk with data in memory. Be careful to use this writing method.
+- `wh` : Overwrites the headers on disk with those in memory. The writing will not touch the time series.
+- `q`: Quit.
+
+The tutor will present some examples. Full manual for using SAC is [here](http://ds.iris.edu/files/sac-manual/).
+
+
+You may notice that there are terminals in Jupyter-lab. Yes, you can run `sac` in those terminals, but they do not support X window. That means it does not allow interactive SAC GUI that is necessary for manipulating seismograms.
