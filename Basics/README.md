@@ -17,7 +17,7 @@ You need to download and install a few things. Choose your system and follow ste
 
 - Windows
     - Download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
-    - Download, install, and run [xming](https://sourceforge.net/projects/xming/).
+    - Download, install, and run [Xming](https://sourceforge.net/projects/xming/).
     - Run the `cmd` from Start, and run commands below.
     (**Note!!!** Please replace the account name `student01` with yours listed in the table below.)
         ```bash
@@ -25,6 +25,8 @@ You need to download and install a few things. Choose your system and follow ste
         ssh -XY student01@compute2.rses.anu.edu.au
         ```
         Follow the prompts and type your password.
+
+    If your cannot install or use OpenSSH (e.g., you do not have the administrator permission), then you can use Putty following the steps [here](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Basics/putty_windows.md#1-log-in-to-linux-server-via-putty).
 
 - MacOS
     - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
@@ -46,7 +48,8 @@ Jupyter-lab is handy for using Python3. The same, You need to download and insta
         ssh -N -L 8000:localhost:9000 student01@compute2.rses.anu.edu.au
         ```
     - Open a web browser on your local computer, and go to `http://localhost:8000`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
-
+    
+    If your cannot install or use OpenSSH (e.g., you do not have the administrator permission), then you can use Putty following the steps [here](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Basics/putty_windows.md#2-log-in-to-jupyter-lab-via-putty).
 
 - MacOS
     - If have not, please download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
