@@ -9,10 +9,10 @@ be on your computer or on a remote server. In this lab, we choose the 2nd option
 to make it simple. We have set up a remote server (`compute2`) at RSES for you.
 
 You will log in to the `compute2` via two methods: 1) terminal method and 2)
-Jupyter-lab method. Both are necessary for this lab. You will use the former
-to run `SAC` GUI. The latter will be more handy for using Python3.
+Jupyter-lab method. Both are necessary for this lab. The former is necessary for
+running SAC. The latter will be more handy for using Python3.
 
-## 1.1 Via terminal
+## 1.1 Terminal method
 You need to download and install a few things. Choose your system and follow steps below.
 
 - Windows
@@ -24,6 +24,7 @@ You need to download and install a few things. Choose your system and follow ste
         set DISPLAY=127.0.0.1:0
         ssh -XY student01@compute2.rses.anu.edu.au
         ```
+        Follow the prompts and type your password.
 - MacOS
     - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
     - Run the application `Terminal`, and run commands below.
@@ -31,16 +32,14 @@ You need to download and install a few things. Choose your system and follow ste
         ```bash
         ssh -XY student01@compute2.rses.anu.edu.au
         ```
+        Follow the prompts and type your password.
 
-After typing your password provided, you are on the server.
-
-
-## 1.2 Via `Jupyter-lab`
-Jupyter-lab is handy. The same, You need to download and install a few things. Choose your system and follow steps below.
+## 1.2 Jupyter-lab method
+Jupyter-lab is handy for using Python3. The same, You need to download and install a few things. Choose your system and follow steps below.
 
 - Windows
-    - Download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
-    - Run the `cmd` from Start, and run commands below.
+    - If have not, please download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
+    - Run a new `cmd` from Start, and run commands below.
     (**Note!!!** Please replace the 9000 with your four digits listed in the table below. Please replace the account name `student01` with yours listed in the table below.)
         ```bash
         ssh -N -L 8000:localhost:9000 student01@compute2.rses.anu.edu.au
@@ -49,8 +48,8 @@ Jupyter-lab is handy. The same, You need to download and install a few things. C
 
 
 - MacOS
-    - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
-    - Run the application `Terminal`, and run commands below.
+    - If have not, please download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
+    - Open a new window for application `Terminal`, and run commands below.
     (**Note!!!** Please replace the 9000 with your four digits listed in the table below. Please replace the account name `student01` with yours listed in the table below.)
         ```bash
         ssh -N -L 8000:localhost:9000 student01@compute2.rses.anu.edu.au
@@ -68,7 +67,7 @@ Jupyter-lab is handy. The same, You need to download and install a few things. C
 |Patrik Rilko        | 9070     | student07 |                  |     |
 |Ruipeng Ma          | 9080     | student08 |                  |     |
 
-**NOTE**. If you are off campus, you will need to install and run ANU [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access). You may need to ask the GlobalProtect Service Desk to allow you the permission to access RSES servers. Contacts of the Service Desk are on the [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access) website.
+**NOTE**. If you are off campus, you need to install and run ANU [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access). You may need to ask the GlobalProtect Service Desk for help. Contacts of the Service Desk are on the [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access) website.
 
 # 2. Basics of Linux
 In the Jupyter-lab, you can launch a `Terminal`, then Linux here you go:)
