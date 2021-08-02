@@ -126,7 +126,7 @@ SAC (Seismic Analysis Code) is a program used to analyze and display seismic dat
 is stored in sac format. It has its own set of premade functions that will read, write, process, and display data. There will be further
 explanation of these functions later in the semester.
 
-Log in to the `compute2` using the  "via terminal" method. Then, simply run `sac` to start the SAC program. Full manual for using SAC is [here](http://ds.iris.edu/files/sac-manual/).
+Log in to the `compute2` using the  "Terminal method". Then, simply run `sac` to start the SAC program. Full manual for using SAC is [here](http://ds.iris.edu/files/sac-manual/).
 
 You may notice that there are terminals in Jupyter-lab. Yes, you can run `sac` there, but Jupyter-lab does not support X window. That means it does not allow interactive SAC GUI that is necessary for manipulating seismograms.
 
