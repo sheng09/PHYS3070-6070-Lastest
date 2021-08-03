@@ -21,6 +21,8 @@ You need to download and install a few things. Choose your system and follow ste
     - Run the `cmd` from Start, and run commands below.
     (**Note!!!** Please replace the user name `student01` with yours listed in the table below.)
         ```bash
+        mkdir \dev
+        mkdir \dev\tty
         set DISPLAY=127.0.0.1:0
         ssh -XY student01@compute2.rses.anu.edu.au
         ```
