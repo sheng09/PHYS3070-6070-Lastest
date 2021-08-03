@@ -17,7 +17,7 @@ You need to download and install a few things. Choose your system and follow ste
 
 - Windows
     - Download and install [OpenSSH](https://www.mls-software.com/files/setupssh-8.5p1-1.exe).
-    - Download, install, and run [Xming](https://sourceforge.net/projects/xming/).
+    - Download, install, and run [Xming](https://sourceforge.net/projects/xming/). If nothing happens, do no worry as the Xming is running properly in the background. You can check Xming in your system tray.
     - Run the `cmd` from Start, and run commands below.
     (**Note!!!** Please replace the user name `student01` with yours listed in the table below.)
         ```bash
@@ -31,7 +31,7 @@ You need to download and install a few things. Choose your system and follow ste
     **Alternatively**, if your cannot install OpenSSH (e.g., you do not have administrator permission), then you can use Putty following the steps [here](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Basics/putty_windows.md#1-log-in-to-linux-server-via-putty).
 
 - MacOS
-    - Download and install [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg).
+    - Download, install and run [XQuartz](https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.1/XQuartz-2.8.1.dmg). You can just minimize or close all pop-up windows.
     - Run the application `Terminal`, and run commands below.
     (**Note!!!** Please replace the user name `student01` with yours listed in the table below.)
         ```bash
