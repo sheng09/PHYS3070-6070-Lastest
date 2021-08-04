@@ -169,3 +169,7 @@ The tutor will present some examples. Full manual for using SAC is [here](http:/
 
 
 You may notice that there are terminals in Jupyter-lab. Yes, you can run `sac` in those terminals, but they do not support X window. That means it does not allow interactive SAC GUI that is necessary for manipulating seismograms.
+
+
+
+# [NEXT Lab1](https://github.com/sheng09/PHYS3070-6070-Latest/tree/main/Lab1#lab1---locating-earthquakes)
