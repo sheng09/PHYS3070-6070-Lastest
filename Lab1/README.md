@@ -33,12 +33,12 @@ If the solution looks good, plot a closer view of the region around the epicentr
 
 *Epicentre estimate from map: 		Longitude: ___________________	 Latitude: ____________________*
 
-## Hint: Conversion between relative time and absolute time
+## Hint 1: Conversion between relative time and absolute time
 
 ![](sac_time.png)
 
-## Example:
-[html]() or Jupyter notebook. 
+## Hint2: Example:
+Examples in 1) Jupyter notebook (part1.ipynb) or 2) source file (part1.py) in your directory.
 
 # Part 2 (30 points)
 ### **Purpose**
