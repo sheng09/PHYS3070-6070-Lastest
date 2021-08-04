@@ -37,6 +37,9 @@ If the solution looks good, plot a closer view of the region around the epicentr
 
 ![](sac_time.png)
 
+## Example:
+[html]() or Jupyter notebook. 
+
 # Part 2 (30 points)
 ### **Purpose**
 
