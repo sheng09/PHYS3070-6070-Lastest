@@ -12,9 +12,10 @@ pip3 install --user numpy
 pip3 install --user obspy
 pip3 install --user pandas
 
-#3. start jupyter-lab
-jupyter notebook $password
-jupyter-lab --port $XXXX$ --no-browser & # replace XXXX to four digits
+#3. start jupyter-lab server
+jupyter server --generate-config
+jupyter server $password$
+nohup jupyter-lab --port $XXXX$ --no-browser & # replace XXXX to four digits
 ```
 
 ```
