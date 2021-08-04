@@ -64,7 +64,7 @@ B. A. Bolt - Earthquakes, Chapter 3 (optional reading)
 
 ### **A. Seismograms**
 
-Sections of seismograms written at three seismographic stations in California are [provided](https://github.com/sheng09/PHYS3070-2020/blob/master/Week2/Cal_Eq.pdf). These sections are all for the same period of time and the time in hours and minutes is written next to one of the minute marks. This is UTC time. These seismograms are all for the vertical component of motion. They are short-period Benioff instruments, with a natural period of 1 second, and a peak magnification of about 30,000.
+Sections of seismograms written at three seismographic stations in California are [provided](https://github.com/sheng09/PHYS3070-6070-Latest/tree/main/Lab1/Cal_Eq.pdf). These sections are all for the same period of time and the time in hours and minutes is written next to one of the minute marks. This is UTC time. These seismograms are all for the vertical component of motion. They are short-period Benioff instruments, with a natural period of 1 second, and a peak magnification of about 30,000.
 The objective of this exercise is to locate a typical local earthquake. By local we mean that the earthquake is either within or near region spanned by the seismographic network. The seismograms for this earthquake are fairly typical in that they are not of particularly high quality and illustrate some of the difficulties that are encountered in the routine operation of a seismographic network. One of the lessons to be learned from this exercise is that useful information can often be extracted from even a seismogram of poor quality.
 
 ### **B. Arrival times**
