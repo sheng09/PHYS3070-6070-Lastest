@@ -37,8 +37,10 @@ If the solution looks good, plot a closer view of the region around the epicentr
 
 ![](sac_time.png)
 
-## Hint2: Example:
-Examples in 1) Jupyter notebook (part1.ipynb) or 2) source file (part1.py) in your directory.
+## Hint2: Examples:
+Examples in 1) Jupyter notebook [part1.ipynb](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Lab1/part1.ipynb) or 2) source file [part1.py](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Lab1/part1.py). Also, those files are in your local directory on compute2 provided by Sheng.
+
+
 
 # Part 2 (30 points)
 ### **Purpose**

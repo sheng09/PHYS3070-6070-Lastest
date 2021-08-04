@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[46]:
+# In[1]:
 
 
 import numpy as np
@@ -10,6 +10,20 @@ import cartopy.crs as ccrs
 import cartopy.geodesic
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
+
+
+# In[2]:
+
+
+# You may need this function for computing spherical distance between two point
+def great_circle_distance(lon1_deg, lat1_deg, lon2_deg, lat2_deg):
+    """
+    Return the great-circle spherical distance (in degree) between
+    two points (lon1_deg, lat1_deg) and (lon2_deg, lat2_deg) in degree.
+    """
+    lon1, lat1, lon2, lat2 = np.deg2rad( [lon1_deg, lat1_deg, lon2_deg, lat2_deg] )
+    dist = np.arccos( np.sin(lat1) * np.sin(lat2) + np.cos(lat1) * np.cos(lat2) * np.cos(lon1 - lon2) )
+    return np.rad2deg(dist)
 
 
 # Lab 1: Locating earthquakes Part 1
