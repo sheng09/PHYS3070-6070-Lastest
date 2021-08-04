@@ -78,15 +78,15 @@ Jupyter-lab is handy for using Python3. The same, You need to download and insta
         ```
     - Open a web browser on your local computer, and go to `http://localhost:8000`. In the webpage, use the password provided. (Ask sheng.wang(at)anu.edu.au for your password if you forget)
 
-| Name               | 4 digits | User name | Password for ssh |  Password for Jupyter-lab|
-|:-------------------|:--------:|:---------:|:----------------:|:---:|
-|Cole Johnson        | 9020     | student02 |                  |     |
-|Maximilian Williams | 9030     | student03 |                  |     |
-|Joshua Taubman      | 9040     | student04 |                  |     |
-|Tianshi Zhou        | 9050     | student05 |                  |     |
-|Jason Aramideh      | 9060     | student06 |                  |     |
-|Patrik Rilko        | 9080     | student08 |                  |     |
-|Ruipeng Ma          | 9090     | student09 |                  |     |
+| Name       | 4 digits | User name | Password for ssh |  Password for Jupyter-lab|
+|:-----------|:--------:|:---------:|:----------------:|:---:|
+|Cole        | 9020     | student02 |                  |     |
+|Maximilian  | 9030     | student03 |                  |     |
+|Joshua      | 9040     | student04 |                  |     |
+|Tianshi     | 9050     | student05 |                  |     |
+|Jason       | 9060     | student06 |                  |     |
+|Patrik      | 9080     | student08 |                  |     |
+|Ruipeng     | 9090     | student09 |                  |     |
 
 **NOTE**. If you are off campus, you need to install and run ANU [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access). You may need to ask the GlobalProtect Service Desk for help. Contacts of the Service Desk are on the [GlobalProtect](https://services.anu.edu.au/information-technology/login-access/remote-access) website.
 
