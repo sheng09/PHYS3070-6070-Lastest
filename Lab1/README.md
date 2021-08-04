@@ -33,7 +33,7 @@ If the solution looks good, plot a closer view of the region around the epicentr
 
 *Epicentre estimate from map: 		Longitude: ___________________	 Latitude: ____________________*
 
-**Hint: Conversion between relative time and absolute time**
+## Hint: Conversion between relative time and absolute time
 
 ![](sac_time.png)
 
