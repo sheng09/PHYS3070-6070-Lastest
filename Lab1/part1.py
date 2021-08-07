@@ -1,18 +1,19 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[12]:
 
 
 import numpy as np
 import cartopy
 import cartopy.crs as ccrs
+import cartopy.feature as cfeature
 import cartopy.geodesic
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
 
-# In[2]:
+# In[13]:
 
 
 # You may need this function for computing spherical distance between two point
@@ -44,7 +45,7 @@ def great_circle_distance(lon1_deg, lat1_deg, lon2_deg, lat2_deg):
 
 # ![](./sac_time.png)
 
-# In[35]:
+# In[14]:
 
 
 # Step 1.1
@@ -54,7 +55,7 @@ def great_circle_distance(lon1_deg, lat1_deg, lon2_deg, lat2_deg):
 # For example we measure the tdiff = 305.0s for ENH station
 
 
-# In[36]:
+# In[15]:
 
 
 # The function for inverting distance and P traveltime by providing a measured time difference
@@ -83,7 +84,7 @@ def get_distance(tdiff, flag_plot=False):
     return dist, tp
 
 
-# In[37]:
+# In[16]:
 
 
 # Step 1.2
@@ -91,7 +92,7 @@ def get_distance(tdiff, flag_plot=False):
 get_distance(305.0, True)
 
 
-# In[38]:
+# In[17]:
 
 
 # We can also invert the origin time
@@ -102,7 +103,7 @@ ot = datetime(2019, 1, 6, 17, 26, 20, 19000)+timedelta(seconds=444.16) - timedel
 print(ot)
 
 
-# In[42]:
+# In[18]:
 
 
 # Step 1.3
@@ -125,7 +126,7 @@ for stnm, v in measurements.items():
 # 
 # **Construct a map** (directions follow) with a circle of constant radius (equal to the source-receiver distance) drawn around each station. All the circles should intersect at approximately one point. If any of the circles are inconsistent with the solution, go back and check your first steps for the appropriate station. 
 
-# In[43]:
+# In[22]:
 
 
 fig = plt.figure(figsize=(12, 10))
@@ -134,6 +135,7 @@ ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree(central_longitude=160.
 # make the map global rather than have it zoom in to
 # the extents of any plotted data
 ax.set_global()
+ax.add_feature(cfeature.LAND, color='lightgray')
 ax.coastlines()
 app = cartopy.geodesic.Geodesic()
 for stnm, v in measurements.items():
@@ -146,19 +148,21 @@ for stnm, v in measurements.items():
 ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=True, linewidth=0.5, color='gray', alpha=0.5, linestyle=':')
 ax.legend(loc='lower left')
 
+plt.savefig('global.jpg', bbox_inches = 'tight', pad_inches = 0.1)
 # well, in the generate figure, the circles intersect. The intersection point is the inverted location for the earthquake.
 # 
 
 
 # If the solution looks good, plot a closer view of the region around the epicentre and estimate as accurately as possible the coordinates of the earthquake. One way to do this is to find the point on the map that minimizes the sum of the distances (L1 norm) or distances squared (L2 norm) between the selected point and each of the circles. Write the estimated longitude and latitude on the lines of the attached table.
 
-# In[44]:
+# In[36]:
 
 
 fig = plt.figure(figsize=(12, 10))
 ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree(central_longitude=160.0))
 
 ax.coastlines()
+ax.add_feature(cfeature.LAND, color='lightgray')
 app = cartopy.geodesic.Geodesic()
 for stnm, v in measurements.items():
     stlo, stla, dist = v['stlo'], v['stla'], v['dist']
@@ -169,8 +173,9 @@ for stnm, v in measurements.items():
 
 ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=True, linewidth=0.5, color='gray', alpha=0.5, linestyle=':')
 ax.legend(loc='lower left')
-ax.set_extent([120, 135, -5, 10], crs=ccrs.PlateCarree())
+ax.set_extent([120, 135, -10, 10], crs=ccrs.PlateCarree())
 
+plt.savefig('local.jpg', bbox_inches = 'tight', pad_inches = 0.1)
 # The generated Figure presents a closer view. It shows the imperfection of the result. 
 # The circles do not intersect at a single point!
 #
@@ -184,3 +189,9 @@ ax.set_extent([120, 135, -5, 10], crs=ccrs.PlateCarree())
 # - [ ] the table you completed during the exercise,
 # - [ ] the maps.
 # - [ ] a short summary detailing your thought process regarding picking any difficult phases and how the epicentral location could be improved by this method.
+
+# In[ ]:
+
+
+
+
