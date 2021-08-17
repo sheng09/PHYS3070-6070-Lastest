@@ -41,19 +41,20 @@ If the solution looks good, plot a closer view of the region around the epicentr
 Examples in 1) Jupyter notebook [part1.ipynb](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Lab1/part1.ipynb) or 2) source file [part1.py](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Lab1/part1.py). Also, those files are in your local directory on compute2 provided by Sheng.
 
 
-## Hint3: Potential Bugs
-Sometimes, you may get errors when running Python3 executable files like:
+## Hint3: Possible Bugs
 
-```
-Geometry must be a Point or LineString
-```
+- Sometimes, you may get errors when running Python3 executable files like:
 
-The error is related to Python3 packages `cartopy` and `shapely`. It can be fixed by reinstalling the package:
+  ```
+  Geometry must be a Point or LineString
+  ```
 
-```bash
-pip3 uninstall shapely
-pip3 install shapely --no-binary shapely
-```
+  The error is related to Python3 packages `cartopy` and `shapely`. It can be fixed by reinstalling the package:
+
+  ```bash
+  pip3 uninstall shapely
+  pip3 install shapely --no-binary shapely
+  ```
 
 
 # Part 2 (30 points)
