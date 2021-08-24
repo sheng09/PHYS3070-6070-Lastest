@@ -17,7 +17,7 @@ Both the lab1 and lab2 rely on observations of seismic waves radiated from an ea
 # Content
 - Week 1 : Basics of Linux and SAC [here](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Basics/README.md#basics-of-linux-and-sac)
 - Week 2,3 : [Lab1](https://github.com/sheng09/PHYS3070-6070-Latest/blob/main/Lab1/README.md#lab1---locating-earthquakes)
-- Week 4,5 : Lab2
+- Week 4,5 : [Lab2](https://github.com/sheng09/PHYS3070-6070-Latest/tree/main/Lab2#time-domain-moment-tensor-inversion)
 - Week 6 : Q&A
 
 **DDL: 20-Sep-2021 17:00:00.000**
