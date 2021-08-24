@@ -62,9 +62,9 @@ As shown in the plot in jupyter-notebook, locating an event relies on the inters
 cannot perfectly intersect at the same point. Instead, many points, or any point inside a small area can be an optional solution.
 Therefore, we need to determine the optimal solution (the optimal point).
 
-Let us assume the optimal point *Xi* has the coordinate (*lon*, *lat*) which are the longitude and latitude of the point. On the other hand,
-we have inverted epicentral distance for each station, that corresponds our circle. Let us assume for the *ith* station, it locates
-at the point *Si* described by (*loni*, *lati*) and the the inverted distance (the radius of the circle) is *di*. Then, finding the optimal solution equals to finding
+Let us assume that the optimal point *Xi* has the coordinate (*lon*, *lat*) which are the longitude and latitude of the point. On the other hand,
+we have inverted epicentral distance for each station, that corresponds our circle. Let us assume the *ith* station locates
+at the point *Si* described by (*loni*, *lati*) and its inverted distance (the radius of the circle) is *di*. Then, finding the optimal solution equals to finding
 the minimal of the objective function:
 
 ![](materials/obj_L2.png)
