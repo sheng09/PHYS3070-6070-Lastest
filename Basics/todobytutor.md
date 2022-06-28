@@ -14,7 +14,7 @@ pip3 install --user pandas
 
 #3. start jupyter-lab server
 jupyter server --generate-config
-jupyter server $password$
+jupyter server password
 nohup jupyter-lab --port $XXXX$ --no-browser & # replace XXXX to four digits
 ```
 
